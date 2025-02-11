@@ -2,9 +2,9 @@
 
 namespace Ehystiv\ServRepoMaker\Tests;
 
+use Ehystiv\ServRepoMaker\ServRepoMakerServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Ehystiv\ServRepoMaker\ServRepoMakerServiceProvider;
 
 class TestCase extends Orchestra
 {
