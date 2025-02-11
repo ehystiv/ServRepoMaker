@@ -2,7 +2,8 @@
 
 namespace Ehystiv\ServRepoMaker;
 
-use Ehystiv\ServRepoMaker\Commands\ServRepoMakerCommand;
+use Ehystiv\ServRepoMaker\Commands\RepositoryMakeCommand;
+use Ehystiv\ServRepoMaker\Commands\ServiceMakeCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,9 +18,8 @@ class ServRepoMakerServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('servrepomaker')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_servrepomaker_table')
-            ->hasCommand(ServRepoMakerCommand::class);
+            // ->hasConfigFile()
+            ->hasCommand(ServiceMakeCommand::class)
+            ->hasCommand(RepositoryMakeCommand::class);
     }
 }
