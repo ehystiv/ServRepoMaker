@@ -2,6 +2,14 @@
 
 All notable changes to `ServRepoMaker` will be documented in this file.
 
+## v1.0.0 - 2025-02-11
+
+### What's Changed
+
+* Stable version 1.0.0 by @ehystiv in https://github.com/ehystiv/ServRepoMaker/pull/4
+
+**Full Changelog**: https://github.com/ehystiv/ServRepoMaker/compare/0.0.1...1.0.0
+
 ## v1.0.1 - 2025-02-11
 
 Alpha Versione
