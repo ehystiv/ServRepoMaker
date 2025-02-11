@@ -35,13 +35,6 @@ Optionally, you can publish the views using
 php artisan vendor:publish --tag="servrepomaker-views"
 ```
 
-## Usage
-
-```php
-$servRepoMaker = new Ehystiv\ServRepoMaker();
-echo $servRepoMaker->echoPhrase('Hello, Ehystiv!');
-```
-
 ## Testing
 
 ```bash
