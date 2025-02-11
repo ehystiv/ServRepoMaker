@@ -16,6 +16,7 @@
         }
     ],
     "version": "0.0.1",
+    "type": "library",
     "require": {
         "php": "^8.3",
         "spatie/laravel-package-tools": "^1.16",
