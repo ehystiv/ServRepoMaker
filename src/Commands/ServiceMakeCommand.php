@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Ehystiv\ServRepoMaker\Commands;
@@ -8,20 +9,20 @@ use Illuminate\Contracts\Console\PromptsForMissingInput;
 
 final class ServiceMakeCommand extends GeneratorCommand implements PromptsForMissingInput
 {
-    protected $signature = "make:service {name : The service name} ";
+    protected $signature = 'make:service {name : The service name} ';
 
-    protected $description = "Create a new Service";
+    protected $description = 'Create a new Service';
 
     protected $type = 'class';
 
     protected function getStub(): string
     {
-        return __DIR__ . "/../../stubs/service.stub";
+        return __DIR__.'/../../stubs/service.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return "App\\Http\\Services";
+        return 'App\\Http\\Services';
     }
 
     /**

@@ -4,7 +4,6 @@ namespace Ehystiv\ServRepoMaker;
 
 use Ehystiv\ServRepoMaker\Commands\RepositoryMakeCommand;
 use Ehystiv\ServRepoMaker\Commands\ServiceMakeCommand;
-use Ehystiv\ServRepoMaker\Commands\ServRepoMakerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
