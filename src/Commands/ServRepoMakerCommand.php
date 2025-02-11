@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Ehystiv\ServRepoMaker\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ServRepoMakerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'servrepomaker';
 
     public $description = 'My command';
 
