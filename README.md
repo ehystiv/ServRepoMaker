@@ -7,7 +7,6 @@
 
 This package add commands to generate a simple Service/Repository class.
 
-
 ## Installation
 
 You can install the package via composer:
