@@ -1,0 +1,40 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}
+{
+    public function __construct(
+        //
+    ) {}
+
+    public function all()
+    {
+        //
+    }
+
+    public function find(int $id)
+    {
+        //
+    }
+
+    public function findBy(string $column, mixed $value)
+    {
+        //
+    }
+
+    public function update(int $id, mixed $value)
+    {
+        //
+    }
+
+    public function delete(int $id)
+    {
+        //
+    }
+
+    public function restore(int $id)
+    {
+        //
+    }
+}
