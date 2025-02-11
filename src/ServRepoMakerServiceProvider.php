@@ -2,9 +2,9 @@
 
 namespace Ehystiv\ServRepoMaker;
 
+use Ehystiv\ServRepoMaker\Commands\ServRepoMakerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Ehystiv\ServRepoMaker\Commands\ServRepoMakerCommand;
 
 class ServRepoMakerServiceProvider extends PackageServiceProvider
 {
