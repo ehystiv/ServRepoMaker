@@ -35,8 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ehystiv\\ServRepoMaker\\": "src/",
-            "Ehystiv\\ServRepoMaker\\Database\\Factories\\": "database/factories/"
+            "Ehystiv\\ServRepoMaker\\": "src/"
         }
     },
     "autoload-dev": {
