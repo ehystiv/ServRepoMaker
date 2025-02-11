@@ -15,7 +15,7 @@
             "role": "Developer"
         }
     ],
-    "version": "0.0.1",
+    "version": "1.0.0",
     "type": "library",
     "require": {
         "php": "^8.3",
