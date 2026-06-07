@@ -3,17 +3,11 @@
 it('can make service file', function () {
     $this->artisan('make:service', ['name' => 'TestService'])->assertSuccessful();
 
-    // expect(
-    //     File::exists(
-    //         path: app_path("Http/Repositories/TestService.php"),
-    //     ),
-    // )->toBeTrue();
+    expect(app_path('Http/Services/TestService.php'))->toBeFile();
 });
 
 it('can make repository file', function () {
-    $this->artisan('make:service', ['name' => 'TestRepository'])->assertSuccessful();
+    $this->artisan('make:repository', ['name' => 'TestRepository'])->assertSuccessful();
 
-    // expect(
-    //     "app/Http/Repositories/TestRepository.php"
-    // )->toBeFile();
+    expect(app_path('Http/Repositories/TestRepository.php'))->toBeFile();
 });
