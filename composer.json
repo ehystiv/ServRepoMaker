@@ -2,9 +2,12 @@
     "name": "ehystiv/servrepomaker",
     "description": "Service/Repository class generator",
     "keywords": [
-        "Stefano Bichicchi",
         "laravel",
-        "servrepomaker"
+        "service",
+        "repository",
+        "generator",
+        "artisan",
+        "make"
     ],
     "homepage": "https://github.com/ehystiv/servrepomaker",
     "license": "MIT",
