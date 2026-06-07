@@ -8,32 +8,37 @@ class {{ class }}
         //
     ) {}
 
-    public function all()
+    public function all(): array
     {
         //
     }
 
-    public function find(int $id)
+    public function find(int $id): mixed
     {
         //
     }
 
-    public function findBy(string $column, mixed $value)
+    public function findBy(string $column, mixed $value): mixed
     {
         //
     }
 
-    public function update(int $id, mixed $value)
+    public function create(array $data): mixed
     {
         //
     }
 
-    public function delete(int $id)
+    public function update(int $id, array $data): mixed
     {
         //
     }
 
-    public function restore(int $id)
+    public function delete(int $id): bool
+    {
+        //
+    }
+
+    public function restore(int $id): bool
     {
         //
     }
