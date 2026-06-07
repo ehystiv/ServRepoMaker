@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace Ehystiv\ServRepoMaker\Commands;
 
 use Illuminate\Console\GeneratorCommand;
+use Illuminate\Contracts\Console\PromptsForMissingInput;
 
-final class RepositoryMakeCommand extends GeneratorCommand
+final class RepositoryMakeCommand extends GeneratorCommand implements PromptsForMissingInput
 {
     protected $signature = 'make:repository {name : The repository name}';
 
@@ -19,9 +20,10 @@ final class RepositoryMakeCommand extends GeneratorCommand
         return __DIR__.'/../../stubs/repository.stub';
     }
 
+    /** @param string $rootNamespace */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return 'App\\Http\\Repositories';
+        return config('servrepomaker.repository_namespace', 'App\\Http\\Repositories');
     }
 
     /**

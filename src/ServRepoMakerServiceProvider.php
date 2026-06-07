@@ -18,7 +18,7 @@ class ServRepoMakerServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('servrepomaker')
-            // ->hasConfigFile()
+            ->hasConfigFile()
             ->hasCommand(ServiceMakeCommand::class)
             ->hasCommand(RepositoryMakeCommand::class);
     }

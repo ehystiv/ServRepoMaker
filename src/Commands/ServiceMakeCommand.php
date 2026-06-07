@@ -9,7 +9,7 @@ use Illuminate\Contracts\Console\PromptsForMissingInput;
 
 final class ServiceMakeCommand extends GeneratorCommand implements PromptsForMissingInput
 {
-    protected $signature = 'make:service {name : The service name} ';
+    protected $signature = 'make:service {name : The service name}';
 
     protected $description = 'Create a new Service';
 
@@ -20,9 +20,10 @@ final class ServiceMakeCommand extends GeneratorCommand implements PromptsForMis
         return __DIR__.'/../../stubs/service.stub';
     }
 
+    /** @param string $rootNamespace */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return 'App\\Http\\Services';
+        return config('servrepomaker.service_namespace', 'App\\Http\\Services');
     }
 
     /**
