@@ -5,23 +5,43 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ehystiv/servrepomaker/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ehystiv/servrepomaker/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ehystiv/servrepomaker.svg?style=flat-square)](https://packagist.org/packages/ehystiv/servrepomaker)
 
-This package add commands to generate a simple Service/Repository class.
+Adds Artisan commands to generate Service and Repository classes from stubs.
+
+Supports Laravel 11, 12, and 13.
 
 ## Installation
-
-You can install the package via composer:
 
 ```bash
 composer require --dev ehystiv/servrepomaker
 ```
 
-
 ## Usage
 
 ```bash
-php artisan make:repository {repository_name} # Generate repository
-php artisan make:service {service_name} # Generate service
+php artisan make:service UserService       # generates App\Http\Services\UserService.php
+php artisan make:repository UserRepository # generates App\Http\Repositories\UserRepository.php
 ```
+
+Both commands prompt for the class name if omitted.
+
+## Configuration
+
+Publish the config file to customise the default namespaces:
+
+```bash
+php artisan vendor:publish --tag="servrepomaker-config"
+```
+
+This creates `config/servrepomaker.php`:
+
+```php
+return [
+    'service_namespace'    => 'App\\Http\\Services',
+    'repository_namespace' => 'App\\Http\\Repositories',
+];
+```
+
+Change the values to match your project structure. The generated files will be placed accordingly.
 
 ## Testing
 
